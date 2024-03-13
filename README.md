@@ -1,4 +1,4 @@
-postman curl
+postman request
 curl --location --request POST 'http://localhost:3001/api/users' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -8,6 +8,6 @@ curl --location --request POST 'http://localhost:3001/api/users' \
 before you run the app remember to change
 user
 password
-values to you user and password in config/db.js
+values to your mysql user and password to in config/db.js
 
 and change port to your localhost port in app.js
