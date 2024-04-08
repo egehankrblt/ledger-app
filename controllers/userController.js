@@ -1,6 +1,5 @@
 const User = require('../models/User');
 
-// Create a new user
 async function createUser(req, res) {
   const { name } = req.body;
   if (!name) {
@@ -15,7 +14,6 @@ async function createUser(req, res) {
   }
 }
 
-// Give credit to a user
 async function giveCredit(req, res) {
   const { userId } = req.params;
   const { amount } = req.body;
@@ -31,7 +29,6 @@ async function giveCredit(req, res) {
   }
 }
 
-// Get all users' balances
 async function getAllUsersBalances(req, res) {
   try {
     const balances = await User.getAllUsersBalances();
@@ -41,7 +38,6 @@ async function getAllUsersBalances(req, res) {
   }
 }
 
-// Get individual user's balance
 async function getUserBalance(req, res) {
   const { userId } = req.params;
   if (!userId) {
