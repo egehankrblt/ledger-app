@@ -8,7 +8,6 @@ const pool = createPool({
   database: 'ledger'
 });
 
-// Create accounts table if it doesn't exist
 async function createAccountsTable() {
   try {
     const connection = await pool.getConnection();
