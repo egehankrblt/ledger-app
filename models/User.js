@@ -1,6 +1,5 @@
 const { pool } = require('../config/db');
 
-// Create new user
 async function createUser(name) {
   try {
     const connection = await pool.getConnection();
@@ -13,7 +12,6 @@ async function createUser(name) {
   }
 }
 
-// Give credit to user
 async function giveCreditToUser(userId, amount) {
   try {
     const connection = await pool.getConnection();
@@ -26,7 +24,6 @@ async function giveCreditToUser(userId, amount) {
   }
 }
 
-// Get all users' balances
 async function getAllUsersBalances() {
   try {
     const connection = await pool.getConnection();
@@ -39,7 +36,6 @@ async function getAllUsersBalances() {
   }
 }
 
-// Get individual user's balance
 async function getUserBalance(userId) {
   try {
     const connection = await pool.getConnection();
